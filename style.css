@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+/* menu */
+.menu li{
+    list-style-type: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #000;
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .menu_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .lien{
+    position: relative;
+    min-width: 150px;
+    margin: 0 2px;
+    padding: 10px 8px;
+    background-color: #fff;
+    transition: .5s;
+    text-align: center;
+}
+.menu .sous{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+}
+.menu .sous > li{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: solid 1px #000;
+    transition: .5s;
+}
+.menu button{
+    margin-left: 5px;
+}
+.inscription{
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: crimson;
+}
+.menu .logo{
+    width: 150px;
+    height: 100%;
+    background: url("images/logoecole241.png");
+    background-size: cover;
+    background-position: center;
+}
+.lien:hover .sous{
+    display: block;
+    background-color: rgba(200, 0, 0, .3);
+}
+.sous li:hover{
+    background-color: rgba(0, 0, 255, .1);
+}
+.lien:hover{
+    background-color: rgba(0,0,0,.1);
+}
+/* fin menu */
+.en_tete{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: brown;
+}
+.cta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cta > *{
+    margin: 20px 0;
+}
+.cta h1{
+    color: #fff;
+    font-size: 4em;
+}
+.formation{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+.formation .carte3d{
+    position: relative;
+    width: 310px;
+    height: 400px;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: .6s;
+}
+.carte3d:hover{
+    transform: rotateY(-90deg);
+}
+.carte3d > *{
+    position: absolute;
+}
+.formation .description{
+    
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 50px 1fr 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgba(100, 100, 100, .3);
+    transform: rotateY(90deg);
+}
+.description button{
+    margin: 5px;
+}
+.description .plus{
+    grid-row: 3;
+    border: none;
+    background-color: royalblue;
+    color: #fff;
+}
+.description .inscription{
+    grid-row: 3;
+    grid-column: 2;
+}
+.description .desc{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+.description .titre{
+    grid-column: 1 / span 2;
+}
+.carte3d .carte_info{
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px 1px rgba(100, 100, 100, .3);
+}
+.carte_etude{
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: brown;
+}
+.carte_etude h2{
+    grid-column: 1 / span 3;
+}
+.carte_etude .etude{
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+}
+.carte_etude .etude .header{
+    width: 100%;
+    height: 150px;
+    background-color: bisque;
+}
+.barcamp{
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+    margin: 20px 0;
+    /* background-color: royalblue; */
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+.texte_barcamp{
+    padding: 0 50px;
+}
+.texte_barcamp h2{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.texte_barcamp p{
+    line-height: 20px;
+}
+.section_citation{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background-color: crimson;
+}
+.section_citation .citation{
+    margin: 10px 0;
+    line-height: 20px;
+    text-align: center;
+    width: 60%;
+}
+.section_citation .image_auteur{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    background-color: orange;
+    border-radius: 50%;
+}
+.image_auteur img{
+    width: 100%;
+    height: 100%;
+}
+.a_propos{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: crimson;
+}
+.a_propos h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+.a_propos p{
+    margin: 10px 0;
+}
+.section_temoiniages{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section_temoiniages .temoiniage{
+    width: 400px;
+    min-height: 150px;
+    border-radius: 8px;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    background-color: #fff;
+    box-shadow: 0 0 4px 3px rgba(104, 104, 104, 0.3);
+}
+.profil{
+    position: relative;
+    display: grid;
+    margin-bottom: 8px;
+    grid-template-columns: 60px 1fr;
+}
+.profil::after{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 1px;
+    background-color: crimson;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.profil .image_profil{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 50%;
+}
+.temoiniage .mail{
+    color: #aaa;
+}
+.temoiniage .nom{
+    color: #555;
+    font-weight: bold;
+}
+.section_partenaires{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px 1fr;
+}
+.section_partenaires h2{
+    grid-column: 1/ span 4;
+    text-align: center;
+    font-size: 3em;
+}
+.section_partenaires > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1) rotate(0);
+    margin: 10px;
+    transition: 0.5s;
+}
+.partenaire img{
+    width: 100%;
+}
+.partenaire:hover{
+    transform: scale(0.5) rotate(720deg);
+}
+footer{
+    background-color: #ddd;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .map{
+    width: 500px;
+    height: 300px;
+    background-color: green;
+}
+.titre{
+    color: crimson;
+    border-bottom: solid 1px crimson;
+}
+footer li{
+    list-style-type: none;
+    padding: 7px 0;
+    width: 150px;
+}
+footer a{
+    text-decoration: none;
+    color: #555;
+}
+footer button{
+    margin: 10px 0;
+}
