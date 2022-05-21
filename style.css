@@ -6,80 +6,8 @@
 }
 body{
     min-height: 100vh;
+    padding-top: 74px;
 }
-/* menu */
-.menu li{
-    list-style-type: none;
-}
-.menu a{
-    text-decoration: none;
-    color: #000;
-}
-.menu{
-    width: 100%;
-    height: 70px;
-    padding: 0 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.menu .menu_nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.menu .lien{
-    position: relative;
-    min-width: 150px;
-    margin: 0 2px;
-    padding: 10px 8px;
-    background-color: #fff;
-    transition: .5s;
-    text-align: center;
-}
-.menu .sous{
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0;
-    background-color: #fff;
-}
-.menu .sous > li{
-    width: 100%;
-    padding: 10px 0;
-    background-color: #fff;
-    border-top: solid 1px #000;
-    transition: .5s;
-}
-.menu button{
-    margin-left: 5px;
-}
-.inscription{
-    padding: 10px 12px;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    background-color: crimson;
-}
-.menu .logo{
-    width: 150px;
-    height: 100%;
-    background: url("images/logoecole241.png");
-    background-size: cover;
-    background-position: center;
-}
-.lien:hover .sous{
-    display: block;
-    background-color: rgba(200, 0, 0, .3);
-}
-.sous li:hover{
-    background-color: rgba(0, 0, 255, .1);
-}
-.lien:hover{
-    background-color: rgba(0,0,0,.1);
-}
-/* fin menu */
 .en_tete{
     width: 100%;
     height: 500px;
@@ -319,33 +247,4 @@ body{
 }
 .partenaire:hover{
     transform: scale(0.5) rotate(720deg);
-}
-footer{
-    background-color: #ddd;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-footer .map{
-    width: 500px;
-    height: 300px;
-    background-color: green;
-}
-.titre{
-    color: crimson;
-    border-bottom: solid 1px crimson;
-}
-footer li{
-    list-style-type: none;
-    padding: 7px 0;
-    width: 150px;
-}
-footer a{
-    text-decoration: none;
-    color: #555;
-}
-footer button{
-    margin: 10px 0;
 }
