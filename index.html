@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,69 +9,143 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/footerNav.css">
 </head>
+
 <body>
     <nav class="menu">
-        <div class="logo"></div>
+        <a href="#" class="logo">
+        </a>
         <div class="menu_nav">
             <ul class="menu_nav">
                 <li class="lien l1"> Formations
                     <ul class="sous">
-                        <li class="sous_lien sl1"><a href="#">GÉNIE LOGICIEL</a></li>
-                        <li class="sous_lien sl2"><a href="#">INGENIEUR CLOUD</a></li>
+                        <li class="sous_lien sl1"><a href="formations.html">GÉNIE LOGICIEL</a></li>
+                        <li class="sous_lien sl2"><a href="pagecloud/cloud.html">INGENIEUR CLOUD</a></li>
                     </ul>
                 </li>
                 <li class="lien l2"> Pour-vous
                     <ul class="sous">
-                        <li class="sous_lien sl1"><a href="#">Professionnels</a></li>
-                        <li class="sous_lien sl2"><a href="#">Entreprises</a></li>
-                        <li class="sous_lien sl3"><a href="#">Particuliers</a></li>
+                        <li class="sous_lien sl1"><a href="CIBLES/cibles.html">Professionnels</a></li>
+                        <li class="sous_lien sl2"><a href="CIBLES/cibles.html">Entreprises</a></li>
+                        <li class="sous_lien sl3"><a href="CIBLES/cibles.html">Particuliers</a></li>
                     </ul>
                 </li>
                 <li class="lien l3"><a href="#">A propos</a></li>
             </ul>
-            <button class="inscription">Inscrivez-vous !</button>
+            <a href="formulaireinscriptione241b/inscription.html">
+                <button class="inscription">Inscrivez-vous !</button>
+            </a>
         </div>
     </nav>
     <header class="en_tete">
-        <div class="cta">
-            <h1>Bienvenue</h1>
-            <button class="inscription">Inscrivez-vous !</button>
+        <div class="slide active sl1" data-slide="1">
+            <div class="text_header">
+                <h1>Bienvenue sur ecole241 business</h1>
+                <p>L'université payante 100% en ligne qui vous permet de devenire des Professionnels de la tech, former
+                    aux stards internationnal</p>
+                <button class="inscription">Inscrivez-vous ! </button>
+            </div>
+            <div class="svg_header">
+                <img src="images/saison3.svg">
+            </div>
         </div>
+        <div class="slide sl2" data-slide="2">
+            <div class="text_header">
+                <h1>Devener un INGENIEUR EN GENI LOGICIEL</h1>
+                <button class="inscription">Inscrivez-vous ! </button>
+            </div>
+            <div class="svg_header">
+                <img src="images/saison4.svg">
+            </div>
+        </div>
+        <div class="slide sl3" data-slide="3">
+            <div class="text_header">
+                <h1>Devener un INGENIEUR CLOUD</h1>
+                <button class="inscription">Inscrivez-vous ! </button>
+            </div>
+            <div class="svg_header">
+                <img src="images/sainson1.svg">
+            </div>
+        </div>
+        <div class="slide sl4" data-slide="4">
+            <div class="text_header">
+                <h1>PARTICIPER AU BOUTCAMP !</h1>
+                <button class="inscription">Inscrivez-vous ! </button>
+            </div>
+            <div class="svg_header">
+                <img src="images/1488492651-people06_81717.svg">
+            </div>
+        </div>
+        <button class="slide_button slide_left"></button>
+        <button class="slide_button slide_right"></button>
     </header>
     <main class="corp">
         <!-- section inscription -->
         <section class="formation">
             <div class="carte3d">
                 <div class="carte_info">
-                    <p>carte d'information sur le cout et la duree de la formation</p>
+                    <h2>BOOTCAMP</h2>
+                    <ul>
+                        <li>EN LIGNE</li>
+                        <li>Durée : 3 Mois, Aout a Octobre</li>
+                        <li>Prix : 50.000 FCFA</li>
+                        <li>Les Horaires seront definit pendant l'inscriptrion</li>
+                    </ul>
                 </div>
                 <div class="description">
-                    <h3 class="titre">C'est quoi un bootcam ?</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic quo iure, voluptate quod dolorum vel inventore impedit sint quia nemo, dolore incidunt eaque facere numquam, cum nulla animi alias.</p>
+                    <h3 class="titre">BOUTCAMP</h3>
+                    <p class="desc">Le boutcamp est une periode d'integration, qui permet aux candit de familiarise a la
+                        matrix de la fabrique. a la fin du bootcam le candidat auras une idees plus claire de son
+                        referentiel.</p>
                     <button class="inscription">Inscrivez-vous !</button>
                     <button class="plus">Plus d'information</button>
                 </div>
             </div>
             <div class="carte3d">
                 <div class="carte_info">
-                    <p>carte d'information sur le cout et la duree de la formation</p>
+                    <h2>INGENIEUR CLOUD</h2>
+                    <ul>
+                        <li>EN LIGNE</li>
+                        <li>duree : 4 mois</li>
+                        <li>Prix : 900.000</li>
+                        <li>Payable par tranche</li>
+                        <li>Certificat delivré en fin de cycle</li>
+                    </ul>
                 </div>
                 <div class="description">
-                    <h3 class="titre">C'est quoi un bootcam ?</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic quo iure, voluptate quod dolorum vel inventore impedit sint quia nemo, dolore incidunt eaque facere numquam, cum nulla animi alias.</p>
-                    <button class="inscription">Inscrivez-vous !</button>
-                    <button class="plus">Plus d'information</button>
+                    <h3 class="titre">INGENIEUR CLOUD</h3>
+                    <p class="desc">L'ingénieur ou l'ingénieure cloud computing est en charge du déploiement, du
+                        stockage et de la gestion des données sur des serveurs situés hors de l'entreprise dans des
+                        datas centers. C'est un spécialiste des algorithmes, de la programmation et de l'architecture de
+                        logiciels et réseaux.</p>
+                    <a href="formulaireinscriptione241b/inscription.html">
+                        <button class="inscription">Inscrivez-vous !</button>
+                    </a>
+                    <a href="pagecloud/cloud.html">
+                            <button class="plus"><a href="formations.html"> Plus d'information</a></button>
+                    </a>
                 </div>
             </div>
             <div class="carte3d">
                 <div class="carte_info">
-                    <p>carte d'information sur le cout et la duree de la formation</p>
+                    <h2>INGENIEUR LOGICIEL</h2>
+                    <ul>
+                        <li>EN LIGNE</li>
+                        <li>Durée : 12 mois</li>
+                        <li>Prix : 1200.000 FCFA</li>
+                        <li>Payable par tranche</li>
+                        <li>Les Horraires seront definit pendant l'inscription</li>
+                        <li>Certificat delivré en fin de cycle</li>
+                    </ul>
                 </div>
                 <div class="description">
-                    <h3 class="titre">C'est quoi un bootcam ?</h3>
-                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic quo iure, voluptate quod dolorum vel inventore impedit sint quia nemo, dolore incidunt eaque facere numquam, cum nulla animi alias.</p>
-                    <button class="inscription">Inscrivez-vous !</button>
-                    <button class="plus">Plus d'information</button>
+                    <h3 class="titre">INGENIEUR LOGICIEL</h3>
+                    <p class="desc">Concevoir puis mettre en place des logiciels de comptabilité, de gestion des stocks,
+                        de traitement des images, d'applications web... en suivant les demandes des entreprises ou des
+                        administrations, c'est le rôle de l'ingénieur logiciel.</p>
+                    <a href="formulaireinscriptione241b/inscription.html">
+                        <button class="inscription">Inscrivez-vous !</button>
+                    </a>
+                    <button class="plus"><a href="formations.html">Plus d'information</a></button>
                 </div>
             </div>
         </section>
@@ -80,29 +155,40 @@
             <h2>Carte d'Etude</h2>
             <div class="etude ce1">
                 <div class="header"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ducimus nesciunt cumque, eveniet quidem asperiores voluptatum, illum eius reiciendis quis quam deleniti fuga nam nemo iste porro aliquam dolorem vitae?</p>
+                <p>La formation se feras sur une plateforme dediée QWASAR.io, une plateforme d'apprentissage numerique
+                    qui donne a ces apprenants nla possibilte de se former aux metier techniques du numerique a des
+                    srtandards repondants aux exigences internationales</p>
             </div>
             <div class="etude ce2">
-                <div class="header"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ducimus nesciunt cumque, eveniet quidem asperiores voluptatum, illum eius reiciendis quis quam deleniti fuga nam nemo iste porro aliquam dolorem vitae?</p>
+                <div class="header">
+                    <img src="images/outils.svg">
+                </div>
+                <p>La formation se fera par le canal de nos outils numeriques habituels a savoir nos telephones
+                    portables et ordinateurs, elle se caracterisera aussi par des visos conferences, des mini
+                    conferences et des sytemes de collaboration et d4apprentissage collaboratifs bien reflechis tels que
+                    le LMS (learning Management System) </p>
             </div>
             <div class="etude ce3">
-                <div class="header"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ducimus nesciunt cumque, eveniet quidem asperiores voluptatum, illum eius reiciendis quis quam deleniti fuga nam nemo iste porro aliquam dolorem vitae?</p>
+                <div class="header">
+                    <img src="images/robot.svg">
+                </div>
+                <p>La psychologie inversee, le cadre d'etude commun a celui de l'ecole 241 offre aux apprenant la
+                    liberte de se former, d;apprendre par les paires, par la collaboration et par des projets pratiques
+                    communs</p>
             </div>
         </section>
         <!-- fin carte d'etude -->
         <!-- section barcamp -->
         <section class="barcamp">
             <div class="img_barcamp">
-                <img src="images/working_work_office_business_man_alone_home_icon_142242.svg" alt="representation barcamp">
+                <img src="images/working_work_office_business_man_alone_home_icon_142242.svg"
+                    alt="representation barcamp">
             </div>
             <div class="texte_barcamp">
-                <h2>barcamp</h2>
+                <h2>BOOTCAMP</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsa, veniam distinctio, unde doloribus quos consequatur repellendus libero aspernatur tempora cupiditate explicabo porro dolorum laudantium totam alias dolorem quisquam sit.
-                  Repellat voluptates aliquid, porro veniam eos ducimus nostrum consequatur ratione neque totam consectetur cum quasi pariatur molestiae laudantium omnis placeat corrupti, magnam praesentium, unde veritatis a commodi. Sequi, incidunt necessitatibus!  
-                  Cum odit dolores, velit ex soluta at accusantium alias tenetur vero harum aut tempore fugit molestiae autem nam laudantium explicabo natus nemo facilis. Soluta voluptates nostrum quos, quaerat blanditiis unde.
+                    Le boutcamp est une periode d'integration, qui permet aux candit de familiarise a la matrix de la
+                    fabrique. a la fin du bootcam le candidat auras une idees plus claire de son referentiel.
                 </p>
             </div>
         </section>
@@ -112,17 +198,25 @@
             <div class="image_auteur">
                 <img src="images/sylver2.jpeg" alt="sylver">
             </div>
-            <p class="citation">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur possimus deleniti, cupiditate quibusdam non quidem labore aliquid laboriosam iste, impedit est incidunt quas odit dicta molestiae enim excepturi dignissimos placeat.</p>
-            <p class="nom_auteur">Sylver Boussamba</p>
+            <p class="citation">En acquérant les bonnes pratiques du web marketing et du commerce en ligne, votre petite
+                entreprise peut devenir grande.</p>
+            <p class="nom_auteur">Sylvère BOUSSAMBA <br> Fondateur de Ogooué Labs - Ecole 241 - Ecole 241 BUSINESS-
+                Start X 241</p>
         </section>
         <!-- fin section citation -->
         <!-- section a propos -->
         <section class="a_propos">
             <h2>Qui somme nous ?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vitae deleniti qui, suscipit repudiandae necessitatibus vero labore nemo voluptatem, voluptates repellat eligendi ut blanditiis quaerat iure velit fugit? Provident, delectus.
-              Dolorum facere consequatur est ullam quo possimus harum libero. Cum, quos omnis adipisci rem quasi non error, porro doloremque libero quod consequuntur dolores eius? Suscipit facere nemo possimus recusandae maxime?
-              Id temporibus impedit vero, repudiandae quam similique earum quaerat ea perspiciatis quod, sunt quos sequi laborum minus ratione! Error, illum! Atque architecto eos eaque quod natus odit voluptas dolorum nesciunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vitae deleniti qui, suscipit repudiandae
+                necessitatibus vero labore nemo voluptatem, voluptates repellat eligendi ut blanditiis quaerat iure
+                velit fugit? Provident, delectus.
+                Dolorum facere consequatur est ullam quo possimus harum libero. Cum, quos omnis adipisci rem quasi non
+                error, porro doloremque libero quod consequuntur dolores eius? Suscipit facere nemo possimus recusandae
+                maxime?
+                Id temporibus impedit vero, repudiandae quam similique earum quaerat ea perspiciatis quod, sunt quos
+                sequi laborum minus ratione! Error, illum! Atque architecto eos eaque quod natus odit voluptas dolorum
+                nesciunt.
             </p>
         </section>
         <!-- fin section a propos -->
@@ -136,7 +230,9 @@
                         <p class="mail">jeanbosco@gmail.com</p>
                     </div>
                 </div>
-                <p class="texte_temoiniage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam suscipit. Est nostrum eos placeat incidunt quibusdam reprehenderit aliquid distinctio tenetur recusandae nisi, odio, vel dolore sunt delectus et quaerat!</p>
+                <p class="texte_temoiniage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
+                    laboriosam suscipit. Est nostrum eos placeat incidunt quibusdam reprehenderit aliquid distinctio
+                    tenetur recusandae nisi, odio, vel dolore sunt delectus et quaerat!</p>
             </div>
             <div class="temoiniage tem2">
                 <div class="profil">
@@ -146,7 +242,9 @@
                         <p class="mail">jeanbosco@gmail.com</p>
                     </div>
                 </div>
-                <p class="texte_temoiniage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, laboriosam suscipit. Est nostrum eos placeat incidunt quibusdam reprehenderit aliquid distinctio tenetur recusandae nisi, odio, vel dolore sunt delectus et quaerat!</p>
+                <p class="texte_temoiniage">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus,
+                    laboriosam suscipit. Est nostrum eos placeat incidunt quibusdam reprehenderit aliquid distinctio
+                    tenetur recusandae nisi, odio, vel dolore sunt delectus et quaerat!</p>
             </div>
         </section>
         <!-- fin section temoiniages -->
@@ -181,7 +279,12 @@
             </ul>
             <button class="inscription">Inscrivez-vous !</button>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7117957459886!2d9.44826401413538!3d0.4186845996945386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x107f3b647fa9ea09%3A0x7314a12de1932d03!2sOgoou%C3%A9%20Labs!5e0!3m2!1sfr!2sga!4v1653107215952!5m2!1sfr!2sga" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7117957459886!2d9.44826401413538!3d0.4186845996945386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x107f3b647fa9ea09%3A0x7314a12de1932d03!2sOgoou%C3%A9%20Labs!5e0!3m2!1sfr!2sga!4v1653107215952!5m2!1sfr!2sga"
+            width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
+    <script src="main.js"></script>
 </body>
+
 </html>

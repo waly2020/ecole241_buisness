@@ -89,7 +89,7 @@ footer .map{
     height: 300px;
     background-color: green;
 }
-.titre{
+footer .titre{
     color: crimson;
     border-bottom: solid 1px crimson;
 }

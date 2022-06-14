@@ -9,25 +9,82 @@ body{
     padding-top: 74px;
 }
 .en_tete{
+    position: relative;
     width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    background-color: brown;
+    height: 650px;
+    overflow: hidden;
+    background-color: #eee;
 }
-.cta{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.text_header h1{
+    text-align: center;
+    color: crimson;
 }
-.cta > *{
+.text_header p{
     margin: 20px 0;
 }
-.cta h1{
-    color: #fff;
-    font-size: 4em;
+.text_header{
+    padding: 0 0 0 80px;
+}
+.text_header button{
+    margin: 30px 0;
+}
+.en_tete .svg_header{
+    width: 400px;
+    height: 400px;
+}
+.en_tete .svg_header img{
+    width: 100%;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: .4s;
+}
+.slide_left{
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slide_right{
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .slide_button{
+    position: absolute;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: crimson;
+    box-shadow: 0 0 3px 1px rgba(100, 100, 100, .3);
+    cursor: pointer;
+    animation: clickMe .5s linear infinite;
+    border-radius: 50%;
+}
+.slide.active{
+    transform: translateX(0);
+}
+/* .sl1{
+    background-color: orange;
+}
+.sl2{
+    background-color: rgb(19, 122, 28);
+}
+.sl3{
+    background-color: rgb(43, 61, 163);
+}
+.sl4{
+    background-color: rgb(145, 100, 17);
+} */
+.cta > *{
+    margin: 20px 0;
 }
 .formation{
     width: 100%;
@@ -72,7 +129,11 @@ body{
     border: none;
     background-color: royalblue;
     color: #fff;
+    /* width: 100%;
+    height: 100%; */
+    padding: 8px 3px;
 }
+
 .description .inscription{
     grid-row: 3;
     grid-column: 2;
@@ -80,9 +141,11 @@ body{
 .description .desc{
     grid-row: 2;
     grid-column: 1 / span 2;
+    color: #333;
 }
 .description .titre{
     grid-column: 1 / span 2;
+    color: crimson;
 }
 .carte3d .carte_info{
     width: 100%;
@@ -92,6 +155,18 @@ body{
     padding: 10px;
     box-shadow: 0 0 5px 1px rgba(100, 100, 100, .3);
 }
+.carte_info h2{
+    color: crimson;
+}
+.carte_info ul{
+    margin: 40px 0 0 0;
+    line-height: 20px;
+}
+.carte_info li{
+    list-style-type: none;
+    line-height: 40px;
+    color: #003366;
+}
 .carte_etude{
     width: 100%;
     height: 600px;
@@ -100,7 +175,6 @@ body{
     grid-template-rows: 80px 1fr;
     justify-items: center;
     align-items: center;
-    background-color: brown;
 }
 .carte_etude h2{
     grid-column: 1 / span 3;
@@ -109,11 +183,32 @@ body{
     width: 300px;
     height: 400px;
     background-color: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 5px 2px rgba(100, 100, 100, .3);
 }
 .carte_etude .etude .header{
     width: 100%;
     height: 150px;
-    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.etude .header img{
+    width: 40%;
+}
+.ce1 .header{
+    background: url("images/qwsar.jpg");
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carte_etude h2{
+    color: #003366;
+    font-size: 3em;
+}
+.carte_etude p{
+    margin: 20px;
 }
 .barcamp{
     width: 100%;
@@ -142,11 +237,12 @@ body{
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    background-color: crimson;
+    background-color: #003366;
 }
 .section_citation .citation{
     margin: 10px 0;
     line-height: 20px;
+    color: #fff;
     text-align: center;
     width: 60%;
 }
@@ -154,24 +250,28 @@ body{
     width: 150px;
     height: 150px;
     overflow: hidden;
-    background-color: orange;
     border-radius: 50%;
 }
 .image_auteur img{
     width: 100%;
     height: 100%;
 }
+.nom_auteur{
+    text-align: center;
+    color: #aaa;
+}
 .a_propos{
     width: 100%;
     height: 300px;
     padding: 20px;
     margin: 20px 0;
-    background-color: crimson;
+    background-color: #ccc;
 }
 .a_propos h2{
     text-align: center;
     margin-bottom: 30px;
     font-size: 3em;
+    color: #777;
 }
 .a_propos p{
     margin: 10px 0;
@@ -247,4 +347,15 @@ body{
 }
 .partenaire:hover{
     transform: scale(0.5) rotate(720deg);
+}
+@keyframes clickMe {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
